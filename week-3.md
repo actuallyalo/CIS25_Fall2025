@@ -10,7 +10,7 @@ int main() {
 
     // Prompt and accept user input
     cout << "Enter item name: ";
-    cin >> itemName;  // Note: cin stops at spaces (use getline if multi-word names are needed)
+    cin >> itemName;
 
     cout << "Enter quantity: ";
     cin >> itemQuantity;
