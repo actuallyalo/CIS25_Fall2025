@@ -1,0 +1,38 @@
+#include <iostream>
+#include <string>
+#include <limits> // For std::numeric_limits
+
+int main() {
+    std::string itemName;
+    int itemQuantity;
+    float itemCost;
+
+    // Prompt and accept user input
+    std::cout << "Enter item name: ";
+    std::getline(std::cin, itemName); // Allows multi-word names
+
+    // Input validation for quantity
+    std::cout << "Enter quantity: ";
+    while (!(std::cin >> itemQuantity) || itemQuantity < 0) {
+        std::cout << "Invalid input. Please enter a non-negative integer for quantity: ";
+        std::cin.clear();
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    }
+
+    // Input validation for cost
+    std::cout << "Enter cost per item: $";
+    while (!(std::cin >> itemCost) || itemCost < 0) {
+        std::cout << "Invalid input. Please enter a non-negative number for cost: $";
+        std::cin.clear();
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    }
+
+    float totalCost = itemQuantity * itemCost;
+
+    // Display result with two decimal places
+    std::cout.setf(std::ios::fixed);
+    std::cout.precision(2);
+    std::cout << "Total cost for " << itemName << ": $" << totalCost << std::endl;
+
+    return 0;
+}
