@@ -1,0 +1,1 @@
+For Assignment 5 I created a menu similar to the one presented in the video that asks a customer to place an order using the functions and header files. It also has a loop included that asks the customer if they'd like to place another order using if/and.
