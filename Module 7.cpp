@@ -1,11 +1,10 @@
-﻿#include <iostream>
+#include <iostream>
 #include <string>
+#include <vector>
 #include <algorithm>
-#include <iomanip>
-using namespace std;
 
 struct Item {
-    string name;
+    std::string name;
     int id;
 };
 
