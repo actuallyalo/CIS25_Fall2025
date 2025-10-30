@@ -1,17 +1,18 @@
 #include <iostream>
 #include <string>
-#include <vector>
 #include <algorithm>
+#include <iomanip>
+using namespace std;
 
 struct Item {
-    std::string name;
+    string name;
     int id;
 };
 
 void populate(Item* collection, int total) {
     for (int i = 0; i < total; ++i) {
-        collection[i].name = "Book_" + to_string(i + 1);
-        collection[i].id = i*10;
+        collection[i].name = "Library Book #" + to_string(i + 1);
+        collection[i].id = 0 + i * 10;
     }
 }
 
@@ -56,7 +57,7 @@ int main() {
 
     cout << "Welcome to the Library\n";
     cout << "-----------------------------------------------\n";
-    cout << "Enter an ID in multiples of 10 to search for a book (i.e. 10, 20, 30): ";
+    cout << "Enter an ID to search for in multiples of 10 (e.g. 10, 20, 30, ...): ";
     int targetId;
     if (!(cin >> targetId)) {
         cerr << "Invalid input. Exiting.\n";
@@ -65,7 +66,7 @@ int main() {
         return 1;
     }
 
-    int pos = binarySearchById(warehouse, indexById, COUNT, targetId);
+        int pos = binarySearchById(warehouse, indexById, COUNT, targetId);
     if (pos >= 0) {
         cout << "Found!  ID: " << warehouse[pos].id
              << "  Name: " << warehouse[pos].name << "\n";
@@ -75,5 +76,9 @@ int main() {
 
     delete[] indexById;
     delete[] warehouse;
+    // Optionally pause before exit (for console visibility)
+    cout << "Press Enter to exit...";
+    cin.ignore();
+    cin.get();
     return 0;
 }
