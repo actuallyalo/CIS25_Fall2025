@@ -76,9 +76,10 @@ int main() {
 
     delete[] indexById;
     delete[] warehouse;
-    // Optionally pause before exit (for console visibility)
+
     cout << "Press Enter to exit...";
     cin.ignore();
     cin.get();
     return 0;
 }
+
