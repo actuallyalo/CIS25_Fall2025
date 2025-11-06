@@ -1,0 +1,36 @@
+
+===== Session Start: 2025-10-29 18:47 =====
+Timestamp       Account     Type            Amount  Memo              Balance
+------------------------------------------------------------------------------
+
+===== Session Start: 2025-10-29 18:48 =====
+Timestamp       Account     Type            Amount  Memo              Balance
+------------------------------------------------------------------------------
+
+===== Session Start: 2025-10-29 18:49 =====
+Timestamp       Account     Type            Amount  Memo              Balance
+------------------------------------------------------------------------------
+
+===== Session Start: 2025-10-29 18:49 =====
+Timestamp       Account     Type            Amount  Memo              Balance
+------------------------------------------------------------------------------
+2025-10-29 18:49Checking    Deposit         200.00                    Balance: $200.00
+2025-10-29 18:52Checking    Purchase         20.00                    Balance: $180.00
+2025-10-29 18:52Checking    Purchase         20.00  Dog Food          Balance: $180.00
+
+===== Session Start: 2025-10-29 18:56 =====
+Timestamp       Account     Type            Amount  Memo              Balance
+------------------------------------------------------------------------------
+
+===== Session Start: 2025-10-29 18:57 =====
+Timestamp       Account     Type            Amount  Memo              Balance
+------------------------------------------------------------------------------
+
+===== Session Start: 2025-10-29 19:43 =====
+Timestamp       Account     Type            Amount  Memo              Balance
+------------------------------------------------------------------------------
+
+===== Session Start: 2025-11-05 23:15 =====
+Timestamp       Account     Type            Amount  Memo              Balance
+------------------------------------------------------------------------------
+2025-11-05 23:16Checking    Deposit         200.00                    Balance: $200.00
