@@ -1,0 +1,3 @@
+Water bottles,12
+Flashlight,2
+First Aid Kit,1

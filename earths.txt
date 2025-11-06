@@ -1,0 +1,28 @@
+
+Flashlight,2
+First Aid Kit,1
+Tampons,5
+Water bottles,12
+Flashlight,2
+First Aid Kit,1
+Tampons,4
+Water bottles,12
+Flashlight,2
+First Aid Kit,1
+Tampons,4
+Water bottles,12
+Flashlight,2
+First Aid Kit,1
+Tampons,4
+Water bottles,12
+Flashlight,2
+First Aid Kit,1
+Tampons,4
+Water bottles,12
+Flashlight,2
+First Aid Kit,1
+Tampons,4
+Water bottles,12
+Flashlight,2
+First Aid Kit,1
+Tampons,4
