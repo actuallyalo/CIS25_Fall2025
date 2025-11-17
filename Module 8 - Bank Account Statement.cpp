@@ -1,5 +1,4 @@
-﻿// Module 8 - Bank Account Statement (Menu).cpp
-#include <iostream>
+﻿#include <iostream>
 #include <fstream>
 #include <iomanip>
 #include <string>
@@ -7,10 +6,9 @@
 using namespace std;
 
 string nowStamp() {
-    // Simple timestamp like 2025-10-29 17:05
     time_t t = time(nullptr);
     tm lt;
-    localtime_s(&lt, &t); // Use localtime_s for safety
+    localtime_s(&lt, &t);
     char buf[20];
     strftime(buf, sizeof(buf), "%Y-%m-%d %H:%M", &lt);
     return string(buf);
@@ -70,7 +68,6 @@ public:
 
     void purchase(const string& item, double cost) {
         if (withdraw(cost, "Purchase")) {
-            // Overwrite the last transaction memo with item label for readability
             saveTransaction("Purchase", cost, item);
         }
     }
@@ -81,7 +78,6 @@ public:
             << fixed << setprecision(2) << balance << "\n";
     }
 
-    // Simple transfer to another account
     bool transferTo(BankAccount& other, double amount) {
         if (amount <= 0) { cout << "Amount must be positive.\n"; return false; }
         if (amount > balance) {
@@ -103,7 +99,6 @@ public:
 };
 
 void printHeaderOnce() {
-    // Add a session header so statements read nicely
     ofstream file("transactions.txt", ios::app);
     if (file.is_open()) {
         file << "\n===== Session Start: " << nowStamp() << " =====\n";
@@ -124,7 +119,7 @@ void printMenu() {
         << "1) Deposit\n"
         << "2) Withdraw\n"
         << "3) Purchase (with item name)\n"
-        << "4) Transfer (Checking <-> Savings)\n" // Replaced Unicode arrow with ASCII
+        << "4) Transfer (Checking <-> Savings)\n"
         << "5) Show Balances\n"
         << "6) Show Statement (from transactions.txt)\n"
         << "0) Exit\n"
