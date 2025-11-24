@@ -1,0 +1,5 @@
+Water 65
+Snacks 3
+Wristbands 100
+Bowls 3
+TreatBags 60
